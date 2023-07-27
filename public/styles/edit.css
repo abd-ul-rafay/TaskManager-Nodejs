@@ -1,0 +1,101 @@
+main {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    margin: 70px 0 0;
+    text-align: center;
+}
+
+.edit-container {
+    background-color: white;
+    padding: 20px 30px;
+    margin: 15px 0 0;
+}
+
+.id-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 42px;
+}
+
+.name-input-container, .completed-input-container {
+    display: flex;
+    margin: 15px 0 0;
+    align-items: center;
+}
+
+.input-container label {
+    width: 100px;
+}
+
+.input-container input[type="text"] {
+    font-size: 1.05rem;
+    flex: 1;
+    padding: 9px 7px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+}
+
+.input-container input[type="text"]:focus {
+    outline: none;
+    background-color: rgb(232, 232, 232);
+}
+
+.input-container input[type="checkbox"] {
+    padding: 10px;
+}
+
+.edit-container button {
+    width: 100%;
+    font-size: 1.05rem;
+    padding: 9px 0;
+    margin: 10px 0 0;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: color 0.2s ease;
+}
+
+.edit-container button:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.edit-container a {
+    display: block;
+    text-align: center;
+    color: black;
+    margin: 10px 0 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 650px) {
+    main {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+  .name-input-container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .input-container .name-label {
+    width: 100%;
+  }
+
+  .input-container input[type="text"] {
+    flex: 0;
+    width: 100%;
+  }
+}

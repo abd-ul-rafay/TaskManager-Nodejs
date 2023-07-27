@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Task - Task Manager</title>
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/edit.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Edit Task</h1>
+      <div class="edit-container card">
+        <p class="id-text">Task ID: Loading...</p>
+        <div class="input-container">
+          <div class="name-input-container">
+            <label class="name-label" for="name">Task Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="completed-input-container">
+            <label for="completed">Completed</label>
+            <input type="checkbox" name="completed" id="completed" />
+          </div>
+        </div>
+        <button id="edit-btn">Edit</button>
+      <a href="index.html">Go back to Home</a>
+      </div>
+      <div class="popup" id="div-popup"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/edit.js"></script>
+  </body>
+</html>

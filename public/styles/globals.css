@@ -1,0 +1,45 @@
+:root {
+    --main-color: #faf0ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color);
+}
+
+.card {
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #62c565;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+
+    /* Animation */
+    animation-name: slideIn;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 20px;
+    }
+}

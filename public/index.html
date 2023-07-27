@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Welcome to Task Manager</h1>
+      <div class="input-box card">
+        <h2>Add a Task</h2>
+        <div class="input-row">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="e.g. Buy Grocery"
+          />
+          <button id="btn-add-task">Add</button>
+        </div>
+      </div>
+      <ul id="ul-task">
+        <!-- this is how list items will be added -->
+        <!-- <li class="card">
+          <div class="div-completed-text">
+            <div class="completed">
+              <i class="fa-solid fa-check" style="color: #36ff5e"></i>
+            </div>
+            <div class="task-text">Task One</div>
+          </div>
+          <div class="list-right-side">
+            <div class="date">
+              7/27/2023, 5:03:05 PM
+            </div>
+            <div class="div-edit-delete">
+              <div class="task-edit">
+                <i class="fa-solid fa-pen" style="color: #000000"></i>
+              </div>
+              <div class="task-delete">
+                <i class="fa-solid fa-trash" data-id="1" style="color: #000000"></i>
+              </div>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+      <div class="popup" id="div-popup"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
